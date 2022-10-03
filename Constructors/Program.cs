@@ -17,15 +17,16 @@ namespace Constructors
         //    Console.WriteLine(d2.GetValues());
         //}
 
-        static void Main(string[] args) // For Student Constructor...
-        {
-            Student s1=new Student();
-            Console.WriteLine(s1.GetValues());
+       
+        //static void Main(string[] args) // For Student Constructor...
+        //{
+        //    Student s1=new Student();
+        //    Console.WriteLine(s1.GetValues());
             
-            Student s2=new Student(1,9511798053,"Nitin");
-            Console.WriteLine(s2.GetValues());
+        //    Student s2=new Student(1,9511798053,"Nitin");
+        //    Console.WriteLine(s2.GetValues());
 
-        }
+        //}
     }
 
     
