@@ -11,7 +11,7 @@ namespace Constructors
          private int empid,empage;
         private string empname,empaddress;
 
-        public Employee(int empid, int empage, string empname, string empaddress)
+        public Employee()
         {
             this.empid = empid;
             this.empage = empage;
