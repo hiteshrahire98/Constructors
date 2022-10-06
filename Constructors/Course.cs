@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Constructors
 {
-    internal class Course
+    public class Course
     {
+        /* 
         private int id;
         private string name;
         private float fees;
@@ -23,5 +24,34 @@ namespace Constructors
         {
             return $" Course Id {id} name {name} Fees {fees}";
         }
+        */
+
+        private int id;
+        private string name;
+        private float fees;
+        // property to assign value & return from data member
+
+        public int Id // Id is property name
+        {
+            get { return id; } // return value from data member
+            set { id = value; } // value is built in keyword to assign value
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public float Fees
+        {
+            get { return fees; }
+            set { fees = value; }
+        }
+
+        public override string ToString()
+        {
+            return $" Course Id {id} name {name} Fees {fees}";
+        }
+
     }
 }
