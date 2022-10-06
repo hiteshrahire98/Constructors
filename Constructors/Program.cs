@@ -32,12 +32,23 @@ namespace Constructors
 
         //}
 
-        //static void Main(string[] args)   // For Course Constructor...
-        //{
-        //    Course c2 = new Course(101, "C#", 45000);
-        //    Console.WriteLine(c2); // ToString()
-        //    // ToString method is used to display string representation of an object
-        //}
+        static void Main(string[] args)   // For Course Constructor...
+        {
+            //Course c2 = new Course(101, "C#", 45000);
+            //Console.WriteLine(c2); // ToString()
+            //// ToString method is used to display string representation of an object
+
+            // property initializer syntax
+            Course c1 = new Course();
+            c1.Id = Convert.ToInt32(Console.ReadLine());  // internally app calls to set accessor
+            c1.Name = Console.ReadLine();
+            c1.Fees = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine($"{c1.Id} {c1.Name} {c1.Fees}"); // call the get accessor
+
+            // using object initializer
+            Course c2 = new Course { Id = 2, Name = "Java", Fees = 50000f };
+            Console.WriteLine($"{c2.Id} {c2.Name} {c2.Fees}");
+        }
 
 
         //static void Main(string[] args)  //  For Employee Constructor...
