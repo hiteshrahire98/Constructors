@@ -40,9 +40,9 @@ namespace Constructors
 
         //    // property initializer syntax
         //    Course c1 = new Course();
-        //    c1.Id = Convert.ToInt32(Console.ReadLine());  // internally app calls to set accessor
-        //    c1.Name = Console.ReadLine();
-        //    c1.Fees = Convert.ToSingle(Console.ReadLine());
+        //    c1.Id = 1;  // internally app calls to set accessor
+        //    c1.Name = "C#";
+        //    c1.Fees = 40000f;
         //    Console.WriteLine($"{c1.Id} {c1.Name} {c1.Fees}"); // call the get accessor
 
         //    // using object initializer
@@ -59,6 +59,19 @@ namespace Constructors
         //    Employee e2 = new Employee(102, 26, "Nitin", "Malegaon");
         //    Console.WriteLine(e2.GetValues());
         //}
+
+        //static void Main(string[] args)  // For Department Class Implement Properties...
+        //{
+        //    Department d1 = new Department();
+        //    d1.Deptid = 101;
+        //    d1.Deptname = "IT";
+        //    d1.Location = "Pune";
+        //    Console.WriteLine($"{d1.Deptid} {d1.Deptname} {d1.Location}");
+
+        //    Department d2 = new Department { Deptid = 102, Deptname = "Computer", Location = "Nashik" };
+        //    Console.WriteLine($"{d2.Deptid} {d2.Deptname} {d2.Location}");
+        //}
+
     }
 
 

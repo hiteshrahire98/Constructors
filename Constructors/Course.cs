@@ -9,6 +9,7 @@ namespace Constructors
     public class Course
     {
         /* 
+         //ToString method is used to display string representation of an object
         private int id;
         private string name;
         private float fees;
@@ -26,6 +27,9 @@ namespace Constructors
         }
         */
 
+
+        /*  
+        // property to assign value & return from data member....
         private int id;
         private string name;
         private float fees;
@@ -52,6 +56,24 @@ namespace Constructors
         {
             return $" Course Id {id} name {name} Fees {fees}";
         }
+         */
 
+    
+        
+        // auto implemented property  prop -> tab button 2......
+        private int id;
+        private string name;
+        private float fees;
+        // property to assign value & return from data member
+
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public float Fees { get; set; }
+        public override string ToString()
+        {
+            return $" Course Id {id} name {name} Fees {fees}";
+        }
+
+       
     }
 }
